@@ -1,0 +1,6 @@
+body {
+  height: 100vh;
+  background-image: url("./assets/bkg.jpeg");
+  overflow: hidden;
+  text-align: center;
+}
