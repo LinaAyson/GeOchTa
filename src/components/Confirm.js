@@ -8,3 +8,4 @@ import { Link } from "react-router-dom";
 const Confirm = () => {
     return (<div>  <Link to="/OrderApproved">Bekräfta villkor</Link></div>);
 }
+export default Confirm;

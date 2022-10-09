@@ -1,0 +1,13 @@
+.wlc-content {
+  background-color: orange;
+  color: grey;
+  padding: 10px;
+}
+
+.wlc-box {
+  background-color: beige;
+  color: black;
+  margin-left: 7em;
+  margin-right: 7em;
+  height: 30vh;
+}
