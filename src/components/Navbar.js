@@ -11,8 +11,8 @@ import "../style/Navbar.css"
 const Navbar = () => {
     const navigate = useNavigate();
     return (
-        <div className="navbarContent">
-            <button id="navbarBtn" onClick={() => navigate(-1)}>< IoIosArrowRoundBack /></button>
+        <div className="bg-orange-300 flex justify-between py-2 px-4">
+            <button className="text-4xl" id="" onClick={() => navigate(-1)}>< IoIosArrowRoundBack /></button>
             <Link to="/Welcome" id="homeLink" ><AiOutlineHome /></Link>
             <Popup
                 trigger={<button className="button" id="navbarInfo"> < IoInformationCircleOutline /> </button>}
@@ -20,11 +20,11 @@ const Navbar = () => {
                 nested
             >
                 {close => (
-                    < div className="modal">
+                    <div className=" ">
                         <button className="close" onClick={close}>
                             &times;
                         </button>
-                        <div className="content">
+                        <div className="">
                             *Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas consequuntur doloribus eveniet. Iste laborum quos earum harum, dignissimos modi obcaecati? Magnam molestiae modi non recusandae odit sed veritatis mollitia dolorum!
                             <br />
                         </div>

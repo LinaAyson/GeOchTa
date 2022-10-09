@@ -3,9 +3,8 @@
   padding: 0;
   margin: 0;
 }
-body {
+.App {
   height: 100vh;
-  background-image: url("./assets/bkg.jpeg");
   overflow: hidden;
   text-align: center;
 }

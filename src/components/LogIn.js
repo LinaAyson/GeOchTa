@@ -5,7 +5,7 @@ import "../style/Login.css";
 const LogIn = () => {
     return (<div>
         <Link to="/Welcome">
-            <img src={require('../assets/identifiering.png')} />
+            <img className="w-full" src={require('../assets/identifiering.png')} />
         </Link>
 
 
