@@ -1,10 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 .App {
-  height: 100vh;
-  overflow: hidden;
-  text-align: center;
+  @apply h-screen overflow-auto text-center;
+}
+.knapp {
+  @apply bg-orange-400 text-2xl rounded-lg px-16 py-2 text-white;
+}
+.MuiPaper-root {
+  @apply bg-transparent !important;
+}
+.yellow {
+  background-color: #fef7b6;
+  opacity: 0.95;
+}
+.purple {
+  background-color: #d0cbf7;
+  opacity: 0.95;
+}
+.blue {
+  background-color: #b0d6f5;
+  opacity: 0.95;
 }

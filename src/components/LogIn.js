@@ -1,6 +1,6 @@
 // Firebase LogIn eller FejkLogIn
 import { Link } from "react-router-dom";
-import "../style/Login.css";
+
 
 const LogIn = () => {
     return (<div>

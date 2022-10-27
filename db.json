@@ -3,25 +3,57 @@
     {
       "id": 0,
       "name": "Anna",
-      "adress": "Skatgatan 6",
+      "adress": "Lakegatan 67, 13135 Nacka",
       "children": [
         {
-          "age": "2 månader",
-          "packages": [
-            {
-              "id": 0,
-              "size": "Small 44-50"
-            },
-            {
-              "id": 1,
-              "size": "Medium 50-56"
-            },
-            {
-              "id": 2,
-              "size": "Large 56-62"
-            }
-          ]
+          "age": "2 månader"
         }
+      ],
+      "selectedPackage": 1,
+      "termsConfirmed": true
+    }
+  ],
+  "packages": [
+    {
+      "id": 0,
+      "size": "Gul 44-50",
+      "color": "yellow",
+      "content": [
+        "5 bodys",
+        "5 tröjor",
+        "5 byxor",
+        "20 strumpor",
+        "1 mössa",
+        "2 par skor",
+        "2 par vantar"
+      ]
+    },
+    {
+      "id": 1,
+      "size": "Lila 50-56",
+      "color": "purple",
+      "content": [
+        "5 bodys",
+        "5 tröjor",
+        "5 byxor",
+        "20 strumpor",
+        "1 mössa",
+        "2 par skor",
+        "4 par vantar"
+      ]
+    },
+    {
+      "id": 2,
+      "size": "Blå 56-62",
+      "color": "blue",
+      "content": [
+        "5 bodys",
+        "5 tröjor",
+        "5 byxor",
+        "20 strumpor",
+        "1 mössa",
+        "2 par skor",
+        "4 par vantar"
       ]
     }
   ]

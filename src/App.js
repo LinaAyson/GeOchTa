@@ -6,16 +6,12 @@ import Select from "./components/Select";
 import Confirm from "./components/Confirm";
 import OrderApproved from "./components/OrderApproved";
 import Welcome from "./components/Welcome";
-import pic from "./assets/bkg.jpeg"
-
-
-
-
+import pic from "./assets/bkg.jpeg";
 
 function App() {
   return (
     <div className="App flex">
-      <div className="absolute w-full h-full top-0 z-0 flex"><img src={pic} className="object-cover"></img></div>
+      <div className="absolute w-full h-full top-0 z-0 flex"><img alt="" src={pic} className="object-cover"></img></div>
       <div className='z-10 h-full w-full'>
         <Router>
           <Routes>
@@ -28,9 +24,7 @@ function App() {
           </Routes>
         </Router>
       </div>
-
     </div>
-
   );
 }
 
