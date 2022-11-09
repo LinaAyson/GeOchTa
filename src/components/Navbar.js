@@ -11,28 +11,17 @@ import "../style/Navbar.css"
 const Navbar = () => {
     const navigate = useNavigate();
     return (
-        <div className="bg-orange-300 flex justify-between py-2 px-4">
+        <div className="flex justify-between px-4 py-2 bg-orange-300">
             <button className="text-4xl" id="" onClick={() => navigate(-1)}>< IoIosArrowRoundBack /></button>
             <Link to="/Welcome" id="homeLink" ><AiOutlineHome /></Link>
-            <Popup
-                trigger={<button className="button" id="navbarInfo"> < IoInformationCircleOutline /> </button>}
-                modal
-                nested
-            >
-                {close => (
-                    <div className=" ">
-                        <button className="close" onClick={close}>
-                            &times;
-                        </button>
-                        <div className="">
-                            *Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas consequuntur doloribus eveniet. Iste laborum quos earum harum, dignissimos modi obcaecati? Magnam molestiae modi non recusandae odit sed veritatis mollitia dolorum!
-                            <br />
-                        </div>
 
-                    </div>
-                )
-                }
-            </Popup >
+            <Popup trigger={<button className="button" id="navbarInfo">< IoInformationCircleOutline /></button>} position="bottom right">
+                <div className="p-4 m-2 bg-orange-200 rounded-md"><p>Upplever du problem med appen?</p> <p>Skicka mejl till:</p><p><a href="mailto:josefin@yoursite.com?subject=Problem med appen">josefin.sjostrand@nackakommun.se</a>
+                </p></div>
+            </Popup>
+
+
+
 
         </div >
     )

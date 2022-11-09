@@ -1,41 +1,42 @@
 import { Link } from "react-router-dom";
 import Navbar from "./Navbar";
+import Iframe from "react-iframe";
 
 
 const OrderApproved = () => {
 
     return (
-        <div className="flex flex-col bg-white h-full bg-opacity-80">
+        <div className="flex flex-col h-full overflow-scroll bg-white bg-opacity-80">
             <Navbar />
             <div className="mt-8 space-y-8">
-                <div className="bg-white mx-8 shadow-lg py-4 rounded-lg ">
-                    <div className="text-black text-3xl font-medium mx-4 bg-green-100 py-1 bg-opacity-50">
+                <div className="py-4 mx-8 rounded-lg shadow-lg bg-neutral-50 ">
+                    <div className="py-1 mx-4 text-3xl font-medium text-black bg-green-100 bg-opacity-50">
                         <p>Beställning godkänd</p>
                     </div>
-                    <div className="space-y-4 text-xl font-medium">
+                    <div className="mt-1 space-y-4 text-xl font-medium">
                         <p>Du kan nu hämta ut ditt paket!</p>
                         <div className="text-base font-normal">
-                            <p>Hämta och lämna på:</p>
-                            <p>Kommunhuset</p>
-                            <p>Nackakommunv 23</p>
-                            <p>13140 Nacka</p>
+                            <p className="font-medium">Hämta och lämna på:</p>
+                            <p>Nacka Stadshus, Stadshusvägen 24</p>
+
                         </div>
-                        <div className="font-medium text-lg">
+                        <div className="text-base font-medium">
                             Öppettider
-                            <div className="font-normal text-base">
-                                <p>Måndag-Onsdag - 8.00-17.00</p>
-                                <p>Torsdag-Fredag - 8.00-16.30</p>
-                                <p> Dag före röd dag - 8.00-12.00</p>
+                            <div className="text-base font-normal">
+                                <p>Måndag-Fredag - 8.00-17.00</p>
                             </div>
+                        </div>
+                        <div className="mt-2">
+                            <Iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2036.4355533246655!2d18.1577626164606!3d59.30898368165165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f787eeb75c323%3A0x17efa67508ee0fb1!2sNacka%20Stadshus!5e0!3m2!1ssv!2sse!4v1667297206807!5m2!1ssv!2sse" width="300" height="200" style="border:0" referrerPolicy="no-referrer" />
                         </div>
                     </div>
                 </div>
             </div>
-            <div className="flex">
-                <img className="mx-auto" src={require('../assets/recycle.png')} />
-            </div>
-            <div className="mt-auto p-4">
-                <button className="knapp"><Link to="/Welcome">Startsida</Link></button>
+
+            <div className="p-4 mt-auto">
+                <Link to="/Welcome">
+                    <img className="mx-auto h-36 w-46" src={require('../assets/nackakmn.png')} />
+                </Link>
             </div>
         </div>
 
@@ -44,3 +45,4 @@ const OrderApproved = () => {
 }
 
 export default OrderApproved;
+

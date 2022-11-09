@@ -6,13 +6,15 @@ import Select from "./components/Select";
 import Confirm from "./components/Confirm";
 import OrderApproved from "./components/OrderApproved";
 import Welcome from "./components/Welcome";
-import pic from "./assets/bkg.jpeg";
+import pic from "./assets/test2.jpg";
+import Info from './components/Info';
 
 function App() {
   return (
-    <div className="App flex">
-      <div className="absolute w-full h-full top-0 z-0 flex"><img alt="" src={pic} className="object-cover"></img></div>
-      <div className='z-10 h-full w-full'>
+    <div className="flex App">
+      <div className="absolute top-0 flex w-full h-full" >
+        <img alt="" src={pic} id="bg" className="object-cover"></img></div>
+      <div className="z-10 w-full h-full">
         <Router>
           <Routes>
             <Route exact path="/" element={<LandingPage />} />
@@ -21,6 +23,7 @@ function App() {
             <Route exact path="/Select" element={<Select />} />
             <Route exact path="/Confirm" element={<Confirm />} />
             <Route exact path="/OrderApproved" element={<OrderApproved />} />
+            <Route exact path="/Info" element={<Info />} />
           </Routes>
         </Router>
       </div>

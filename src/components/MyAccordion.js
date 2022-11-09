@@ -33,12 +33,15 @@ export default function MyAccordion({ p }) {
         </AccordionSummary>
         <AccordionDetails>
           <Typography component={'span'}>
-            <ul>
-              {p.content.map((product, i) =>
-                <li key={i}>{product}</li>
-              )}
+            <ul className="flex justify-around">
+
+              <div className="text-lg text-left">
+                {p.content.map((product, i) =>
+                  <li key={i}>{product}</li>
+                )}</div>
+              <img className="w-16 h-16 m-8 " src={require('../assets/icon.png')} />
             </ul>
-            <div className='mt-auto p-4'>
+            <div className='p-4 mt-auto'>
               {/* Onclick usenavigate */}
               <button className='knapp' onClick={() => navigateConfirm(p.id)}> VÄLJ</button>
             </div>

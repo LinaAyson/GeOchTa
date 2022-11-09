@@ -8,23 +8,41 @@
   margin: 0;
 }
 .App {
-  @apply h-screen overflow-auto text-center;
+  @apply h-screen overflow-auto text-center bg-white bg-opacity-90;
 }
 .knapp {
-  @apply bg-orange-400 text-2xl rounded-lg px-16 py-2 text-white;
+  @apply bg-[#f8994a]  text-2xl rounded-lg px-16 py-2 text-white;
+}
+#knapp {
+  @apply bg-[#f5990fd2]  text-xl rounded-md px-16 py-2 text-white;
 }
 .MuiPaper-root {
   @apply bg-transparent !important;
 }
 .yellow {
   background-color: #fef7b6;
-  opacity: 0.95;
 }
 .purple {
   background-color: #d0cbf7;
-  opacity: 0.95;
 }
 .blue {
   background-color: #b0d6f5;
-  opacity: 0.95;
+}
+.popup-overlay {
+  @apply backdrop-blur-sm text-lg font-thin mx-2;
+}
+.packageShow {
+  @apply p-3 mx-10 mt-8 bg-green-100 rounded shadow-lg bg-opacity-80;
+}
+.login {
+  @apply bg-slate-50 opacity-90;
+}
+/* Media query XR landscape */
+@media screen and (min-width: 896px) and (max-height: 414px) {
+  #bg {
+    @apply m-0 p-0 flex flex-auto overflow-scroll;
+  }
+  #confirm {
+    @apply mx-36 p-1  text-xl;
+  }
 }
