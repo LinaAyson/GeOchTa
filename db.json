@@ -10,8 +10,8 @@
           "age": "2 månader"
         }
       ],
-      "selectedPackage": 0,
-      "termsConfirmed": false
+      "selectedPackage": null,
+      "termsConfirmed": true
     }
   ],
   "packages": [

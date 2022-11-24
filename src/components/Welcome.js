@@ -3,10 +3,7 @@ import Navbar from "./Navbar";
 import { useEffect, useState } from "react";
 import Popup from "reactjs-popup";
 
-
-
 const Welcome = () => {
-
     const [parent, setParent] = useState(null);
     const [selectedPackage, setSelectedPackage] = useState(false);
 
@@ -18,9 +15,7 @@ const Welcome = () => {
             // update the state
             if (response.selectedPackage != null && response.termsConfirmed) {
                 getSelectedPackage(response.selectedPackage);
-
             }
-
             await setParent(response);
         };
         const getSelectedPackage = async (id) => {
@@ -48,7 +43,6 @@ const Welcome = () => {
                         <div>
                             <p>Din registrerade adress är:</p>
                             <p>{parent.adress}</p>
-
                         </div>
                         <Popup trigger={<button><p className="text-orange-300 underline">Stämmer inte dina uppgifter?</p></button>} position="center">
                             <div className="bg-orange-200 rounded-md ">
@@ -67,8 +61,6 @@ const Welcome = () => {
                 <button className="knapp" ><Link to="/Select">GÅ VIDARE</Link></button>
             </div>
         </div>);
-
-
 }
 
 export default Welcome;

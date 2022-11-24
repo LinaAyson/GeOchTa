@@ -7,7 +7,6 @@ import Confirm from "./components/Confirm";
 import OrderApproved from "./components/OrderApproved";
 import Welcome from "./components/Welcome";
 import pic from "./assets/test2.jpg";
-import Info from './components/Info';
 
 function App() {
   return (
@@ -23,7 +22,6 @@ function App() {
             <Route exact path="/Select" element={<Select />} />
             <Route exact path="/Confirm" element={<Confirm />} />
             <Route exact path="/OrderApproved" element={<OrderApproved />} />
-            <Route exact path="/Info" element={<Info />} />
           </Routes>
         </Router>
       </div>

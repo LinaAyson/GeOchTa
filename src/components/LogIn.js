@@ -4,12 +4,9 @@ import Button from '@mui/material/Button';
 import { Link } from "react-router-dom";
 import pic from "../assets/nackakmn.png";
 
-
-
 const LogIn = () => {
-
     return (
-        <div className="p-4 mx-16 bg-orange-300 rounded-md mt-80">
+        <div className="p-4 mx-16 bg-orange-200 rounded-md mt-80">
             <form noValidate autoComplete="off">
                 <div className="mt-4 space-y-8">
                     <TextField className="rounded-md login"
@@ -20,7 +17,6 @@ const LogIn = () => {
                         variant="filled"
                         placeholder="Anna" />
                 </div>
-
                 <div className="mt-1 space-y-8">
                     <TextField className="rounded-md login"
                         id="password"
@@ -34,7 +30,6 @@ const LogIn = () => {
                     <Button className="" id="knapp" type="submit" variant="contained">
                         <Link to="/Welcome"> Logga in</Link></Button>
                     <a href="../"><img src={pic} /> </a>
-
                 </div>
             </form >
         </div >

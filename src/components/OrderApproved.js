@@ -2,9 +2,7 @@ import { Link } from "react-router-dom";
 import Navbar from "./Navbar";
 import Iframe from "react-iframe";
 
-
 const OrderApproved = () => {
-
     return (
         <div className="flex flex-col h-full overflow-scroll bg-white bg-opacity-80">
             <Navbar />
@@ -18,7 +16,6 @@ const OrderApproved = () => {
                         <div className="text-base font-normal">
                             <p className="font-medium">Hämta och lämna på:</p>
                             <p>Nacka Stadshus, Stadshusvägen 24</p>
-
                         </div>
                         <div className="text-base font-medium">
                             Öppettider

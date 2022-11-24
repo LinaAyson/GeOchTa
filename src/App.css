@@ -14,7 +14,7 @@
   @apply bg-[#f8994a]  text-2xl rounded-lg px-16 py-2 text-white;
 }
 #knapp {
-  @apply bg-[#f5990fd2]  text-xl rounded-md px-16 py-2 text-white;
+  @apply bg-[#f7a336]  text-xl rounded-md px-16 py-2 text-slate-50;
 }
 .MuiPaper-root {
   @apply bg-transparent !important;

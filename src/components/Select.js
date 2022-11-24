@@ -2,8 +2,6 @@ import Navbar from "./Navbar";
 import MyAccordion from "./MyAccordion";
 import { useEffect, useState } from "react";
 
-
-
 const Select = () => {
     const [packages, setPackages] = useState([]);
 

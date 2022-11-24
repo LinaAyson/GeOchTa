@@ -19,11 +19,7 @@ const Navbar = () => {
                 <div className="p-4 m-2 bg-orange-200 rounded-md"><p>Upplever du problem med appen?</p> <p>Skicka mejl till:</p><p><a href="mailto:josefin@yoursite.com?subject=Problem med appen">josefin.sjostrand@nackakommun.se</a>
                 </p></div>
             </Popup>
-
-
-
-
-        </div >
+        </div>
     )
 }
 

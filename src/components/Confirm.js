@@ -22,7 +22,7 @@ const Confirm = () => {
         navigate('/OrderApproved');
     };
 
-    // confirmed true or false 
+
     return (
         <div className="flex flex-col h-full overflow-scroll bg-white bg-opacity-80">
             <Navbar />
@@ -46,7 +46,7 @@ const Confirm = () => {
                             acceptTerms: Yup.bool().oneOf([true], <p className="italic font-semibold text-red-800">Du måste bekräfta att du förstått instruktionerna</p>)
                         })}
                         onSubmit={() => navigateConfirm()}
-                    // lägg in funktion put till databasen och navigate
+
                     >
                         {({ errors, touched }) => (
                             <Form>
